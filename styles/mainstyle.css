@@ -1,7 +1,8 @@
 /* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box;
 }
 
@@ -36,6 +37,17 @@ header {
     padding: 5px;
 }
 
+/* Logo and social media icon sizes */
+.main-logo {
+    width: 100px; /* Adjust the width to your preference */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
+.social-icon {
+    width: 40px; /* Adjust the width to your preference */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
 
 /* Main content styles */
 main {
@@ -48,7 +60,7 @@ main {
     color: #ffffff;
 }
 
-.social-media-links a {
+/*.social-media-links a {
     display: inline-block;
     margin-right: 20px;
     border: 2px solid #4a2263;
@@ -57,7 +69,7 @@ main {
     background: #833caf;
     color: #ffffff;
     text-decoration: none;
-}
+}*/
 
 .quote-card {
     padding: 20px;
@@ -109,3 +121,5 @@ nav li a {
     color: #000000;
     font-weight: bold;
 }
+
+

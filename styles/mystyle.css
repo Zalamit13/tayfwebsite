@@ -1,0 +1,123 @@
+/*
+--text: #ffffff;
+--background: #000000;
+--primary: #8fb2ff;
+--secondary: #ebf1ff;
+--accent: #ff5900; */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background: #ffffff; /* Very dark blue background */
+    margin: 0;
+    padding: 0;
+}
+
+.main-logo {
+    width: 100px; 
+    height: auto; 
+}
+
+.social-icon {
+    width: 40px; 
+    height: auto; 
+}
+
+/*h1, h2, h3, h4, h5 {
+    font-family: 'Poppins';
+    font-weight: 700;
+}*/
+html {font-size: 100%;} /* 16px */
+h1 {font-size: 4.210rem; /* 67.36px */}
+h2 {font-size: 3.158rem; /* 50.56px */}
+h3 {font-size: 2.369rem; /* 37.92px */}
+h4 {font-size: 1.777rem; /* 28.48px */}
+h5 {font-size: 1.333rem; /* 21.28px */}
+all {font-size: 0.750rem; /* 12px */}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #4d4d4d;
+    padding: 0 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+main {
+}
+
+.intro {
+    background-image: url('/resouces/main-background.png'); /* Add the image URL */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Make the background full and not zoomed in */
+    opacity: 0.7; /* Set the opacity to 70% */
+    text-align: left; /* Center the text horizontally */
+    padding: 40px 0; /* Add top and bottom padding, remove left padding */
+    padding-left: 250px;
+    color: #000000;
+    line-height: 1.5; /* Increase the space between text lines */
+}
+.intro h1 {
+    font-size: 3.158rem; /* Adjust the font size as needed */
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.intro p {
+    font-size: 1.500rem; /* Adjust the font size as needed */
+    margin: 10px 0;
+}
+
+.intro h1, .intro p {
+    margin: 10px 0;
+}
+
+
+footer {
+    margin-top: auto; /* Stick the footer to the bottom of the body */
+    background: #ffffff; /* Use the same color as the header */
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #4d4d4d;
+    padding: 10px 80px;
+}
