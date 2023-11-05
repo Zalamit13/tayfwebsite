@@ -17,8 +17,15 @@ body {
 }
 
 .main-logo {
-    width: 100px; 
-    height: auto; 
+    width: 80px; /* Adjust the size to match the circular container */
+    height: 80px;
+    border: 2px solid #000; /* Add a black border to the circular container */
+    border-radius: 50%; /* Make the container circular */
+}
+
+.main-logo img {
+    width: 75px; /* Adjust the width to your desired size */
+    height: 75px; /* Adjust the height to your desired size */
 }
 
 .social-icon {
@@ -43,12 +50,43 @@ header {
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     background: #ffffff;
-    padding: 10px;
+    padding: 10px 88px; /* Adjust padding */
     border-bottom: 1px solid #4d4d4d;
-    padding: 0 80px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add margin between the logo and the left links */
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+}
+
+.left-links{
+    display: flex;
+    align-items: center;
+}
+
+.right-links {
+    display: flex;
+    align-items: center;
+}
+
+.left-links ul, .right-links ul, .language-selector ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-links ul li, .right-links ul li, .language-selector ul li {
+    margin-right: 20px; /* Add margin between links */
 }
 
 nav {
