@@ -3,6 +3,7 @@
 --background: #000000;
 --primary: #8fb2ff;
 --secondary: #ebf1ff;
+--links bg color: #f5f7f9
 --accent: #ff5900; */
 
 body {
@@ -19,8 +20,8 @@ body {
 .main-logo {
     width: 80px; /* Adjust the size to match the circular container */
     height: 80px;
-    border: 2px solid #000; /* Add a black border to the circular container */
-    border-radius: 50%; /* Make the container circular */
+    /*border: 2px solid #000; /* Add a black border to the circular container */
+    /*border-radius: 50%; /* Make the container circular */
 }
 
 .main-logo img {
@@ -54,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
-    padding: 10px 88px; /* Adjust padding */
+    padding: 10px 100px; /* Adjust padding */
     border-bottom: 1px solid #4d4d4d;
 }
 
@@ -78,7 +79,7 @@ header {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
     position: relative;
 }
@@ -135,7 +136,7 @@ nav li a {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 50px;
     position: relative;
 }
@@ -168,6 +169,9 @@ nav li a {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .intro {
@@ -197,6 +201,32 @@ main {
     margin: 10px 0;
 }
 
+.social-media-links {
+    background-color: #f5f7f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
+.social-media-links img{
+    width: 100px;
+    height: auto;
+}
+
+.social-media-links a {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: inline-block;
+    border-radius: 50%; /* Make the icons circular */
+    overflow: hidden;
+}
+
+.social-media-links a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add a circular shadow on hover */
+}
 
 footer {
     margin-top: auto; /* Stick the footer to the bottom of the body */
