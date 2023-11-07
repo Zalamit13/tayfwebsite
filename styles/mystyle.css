@@ -17,20 +17,6 @@ body {
     padding: 0;
 }
 
-
-
-/*h1, h2, h3, h4, h5 {
-    font-family: 'Poppins';
-    font-weight: 700;
-}*/
-html {font-size: 100%;} /* 16px */
-h1 {font-size: 4.210rem; /* 67.36px */}
-h2 {font-size: 3.158rem; /* 50.56px */}
-h3 {font-size: 2.369rem; /* 37.92px */}
-h4 {font-size: 1.777rem; /* 28.48px */}
-h5 {font-size: 1.333rem; /* 21.28px */}
-all {font-size: 0.750rem; /* 12px */}
-
 header {
     position: sticky;
     top: 0;
@@ -143,18 +129,22 @@ nav li a {
 main {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
 }
 
 .intro {
     text-align: left;
-    padding-top: 40px;
-    padding-bottom: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     color: #000000;
     background-color: #f5f7f9;
     line-height: 1.5;
-    border-bottom: 1px solid #4d4d4d;
     position: relative;
+    border-radius: 15px;
 }
 
 .intro::before {
@@ -166,6 +156,7 @@ main {
     position: absolute;
     inset: 0;
     opacity: 0.45;
+    border-radius: 15px;
 }
 
 .intro h1 {
@@ -199,51 +190,134 @@ main {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-.cards {
+.above-cards {
     display: flex;
-    flex-direction: row;
-    background-color: #ebf1ff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: center; /* Center the cards horizontally */
-    gap: 50px; /* Adjust the gap between cards */
+    justify-content: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
 }
 
-.card {
+/* CSS for Bento Box */
+.bento-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1500px;
+    height: 800px;
+    gap: 15px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Base styles for all cards */
+.boxcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #000000;
+    text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
-.card img {
-    width: 300px;
-    height: auto; 
-    display: block;
-    transition: filter 0.3s;
+.boxcard h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
-.card:hover img {
-    filter: blur(5px);
+.boxcard p {
+    font-size: 25px;
+    margin: 0px;
 }
 
-.card .button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0; /* Initially hide the button */
-    transition: opacity 0.3s; /* Add a smooth transition for opacity */
-    background-color: #ff5900; /* Button background color */
-    color: #ffffff; /* White font color */
-    padding: 10px 20px; /* Padding for the button */
+.boxcard button {
+    background-color: #ff5900;
+    color: #ffffff;
     border: none;
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Simple shadow effect */
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
 }
 
-.card:hover .button {
-    opacity: 1;
+.p11 {
+    background-image: url('../resouces/bento_clothing.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% auto;
+    width: 720px;
+    height: 230px;
+    content: "";
+    position: relative;
+    inset: 0;
+    border-radius: 15px;
 }
+
+.p12 {
+    background-image: url('../resouces/bento_posters.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% auto;
+    width: 230px;
+    height: 230px;
+    content: "";
+    position: relative;
+    inset: 0;
+    border-radius: 15px;
+}
+
+.p21 {
+    background-image: url('../resouces/bento_stickers.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% auto;
+    width: 475px;
+    height: 166px;
+    content: "";
+    position: relative;
+    inset: 0;
+    border-radius: 15px;
+}
+.p21 h2, .p21 p, .p22 h2, .p22 p{
+    color: white;
+}
+
+.p22 {
+    background-image: url('../resouces/bento_bcards.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120% auto;
+    width: 475px;
+    height: 166px;
+    content: "";
+    position: relative;
+    inset: 0;
+    border-radius: 15px;
+}
+
+.p31{
+    color: #ffffff;
+    background-color: #000000;
+    width: 1009px;
+    height: 200px;
+    border-radius: 15px;
+}
+  
 
 footer {
     margin-top: auto; /* Stick the footer to the bottom of the body */
