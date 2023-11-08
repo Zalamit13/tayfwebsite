@@ -27,8 +27,8 @@ header {
     align-items: center;
     background: #ffffff;
     padding: 0px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
     border-bottom: 1px solid #d8d8d8;
 }
 
@@ -139,7 +139,7 @@ main {
     margin-left: 250px;
     margin-right: 250px;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 310px;
     color: #000000;
     background-color: #f5f7f9;
     line-height: 1.5;
@@ -151,43 +151,25 @@ main {
     background-image: url('../resouces/tayf-banner-no-logo.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100% auto;
+    background-size: 160% auto;
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.45;
+    opacity: 0.8;
     border-radius: 15px;
 }
 
 .intro h1 {
     isolation: isolate;
-    font-size: 3.158rem;
+    font-size: 65px;
     font-weight: 700;
-    margin: 20px 200px;
+    margin: 20px 90px;
 }
 
 .intro p {
     isolation: isolate;
-    font-size: 1.500rem;
-    margin: 10px 200px;
-}
-
-.intro button {
-    isolation: isolate;
-    background-color: #ff5900;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    margin-left: 200px;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.intro button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 35px;
+    margin: 10px 90px;
 }
 
 .above-cards {
@@ -203,19 +185,21 @@ main {
 .bento-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 10px;
     padding: 0px;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
-    width: 1500px;
+    width: 1365px;
     height: 800px;
     gap: 15px;
-    align-items: center;
 }
 
 .row {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 /* Base styles for all cards */
@@ -224,8 +208,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 27px;
     color: #000000;
     text-align: center;
     position: relative;
@@ -260,7 +243,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 120% auto;
-    width: 720px;
+    width: 865px;
     height: 230px;
     content: "";
     position: relative;
@@ -273,7 +256,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 120% auto;
-    width: 230px;
+    width: 375px;
     height: 230px;
     content: "";
     position: relative;
@@ -285,8 +268,8 @@ main {
     background-image: url('../resouces/bento_stickers.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 120% auto;
-    width: 475px;
+    background-size: 100% auto;
+    width: 620px;
     height: 166px;
     content: "";
     position: relative;
@@ -300,9 +283,9 @@ main {
 .p22 {
     background-image: url('../resouces/bento_bcards.png');
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 120% auto;
-    width: 475px;
+    background-position: bottom;
+    background-size: 100% auto;
+    width: 620px;
     height: 166px;
     content: "";
     position: relative;
@@ -313,11 +296,69 @@ main {
 .p31{
     color: #ffffff;
     background-color: #000000;
-    width: 1009px;
+    width: 1310px;
     height: 200px;
     border-radius: 15px;
 }
   
+.course {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: #ebf1ff;
+    border-radius: 15px;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-bottom: 30px; 
+}
+
+.left h2 {
+    color: #002470;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.left p {
+    font-size: 20px;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+.right h3 {
+    color: #002470;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.right p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 2;
+}
+
+.enrollbtn {
+    background-color: #ff5900;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust the button font size as needed */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    margin-top: 20px;
+}
+
+.enrollbtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.089);
+    filter: drop-shadow(0px 4px 6px rgba(255, 116, 36, 0.822));
+}
 
 footer {
     margin-top: auto; /* Stick the footer to the bottom of the body */
