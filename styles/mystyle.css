@@ -300,7 +300,63 @@ main {
     height: 200px;
     border-radius: 15px;
 }
-  
+
+.bento-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 1365px;
+    height: auto;
+    gap: 15px;
+}
+
+
+.p41{
+    display: flex;
+    color: black;
+    background-color: #ebf1ff;
+    border-radius: 15px;
+    width: 620px;
+}
+.profile1-links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.profile1-links img{
+    width: 50px;
+    height: auto;
+}
+.p42{
+    display: flex;
+    color: white;
+    background-color: #ff5900;
+    border-radius: 15px;
+    width: 620px;
+}
+.profile2-links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.profile2-links img{
+    width: 50px;
+    height: auto;
+}
+
+.p41 h2, .p42 h2, .p41 p, .p42 p{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
 .course {
     display: flex;
     justify-content: space-around;
@@ -361,6 +417,33 @@ main {
     filter: drop-shadow(0px 4px 6px rgba(255, 116, 36, 0.822));
 }
 
+.about-intro {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    text-align: center;
+}
+.about-intro h3{
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 70px;
+    margin-left: 70px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.about-intro p {
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
 footer {
     margin-top: auto; /* Stick the footer to the bottom of the body */
     background: #f2f2f2; /* Use the same color as the header */
@@ -391,7 +474,21 @@ footer {
 }
 
 .me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 1px solid #d8d8d8;
     margin-right: 50px;
     margin-top: 25px;
+    gap: 10px;
+}
+.me button{
+    color: whitesmoke;
+    background-color: black;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 7px 10px;
+    cursor: pointer;
 }
