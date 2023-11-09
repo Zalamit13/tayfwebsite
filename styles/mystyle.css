@@ -307,6 +307,7 @@ main {
     margin-top: 50px;
     margin-left: 250px;
     margin-right: 250px;
+    margin-bottom: 100px;
     background-color: #ebf1ff;
     border-radius: 15px;
 }
@@ -362,10 +363,35 @@ main {
 
 footer {
     margin-top: auto; /* Stick the footer to the bottom of the body */
-    background: #e0e0e0; /* Use the same color as the header */
+    background: #f2f2f2; /* Use the same color as the header */
     color: #000000;
-    text-align: center;
-    margin-top: 10px;
-    border-top: 1px solid #4d4d4d;
-    padding: 10px 80px;
+    text-align: left;
+    padding-left: 25px;
+    border: 1px solid #d8d8d8;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.contact-info h3{
+    padding-bottom: 10px;
+    margin-right: 50px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.links img{
+    width: 23px;
+    height: auto;
+}
+
+.me{
+    border-top: 1px solid #d8d8d8;
+    margin-right: 50px;
+    margin-top: 25px;
 }
